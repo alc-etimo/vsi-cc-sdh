@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#211c2b"><meta name="description" content="Ariane Lesnyak — Brazilian Portuguese subtitling, SDH, post-editing and linguistic QA.">
+<meta name="theme-color" content="#211c2b"><meta name="description" content="Ariane Lesnyak, Brazilian Portuguese subtitling, SDH, post-editing and linguistic QA.">
 <title>Ariane Lesnyak · Subtitling, SDH & Linguistic QA</title>
 <style>
 :root{--ink:#211c2b;--ink-soft:#514a5d;--muted:#777181;--plum:#654b70;--plum-dark:#493553;--plum-light:#eee8f1;--teal:#267c78;--teal-light:#e5f2ef;--paper:#fbfaf8;--white:#fff;--line:#e7e2e8;--surface:#f4f1f4;--yellow:#f4e8b9;--red:#a94442;--red-light:#f8e9e8;--green:#26745b;--green-light:#e7f2ed;--shadow:0 18px 55px rgba(38,27,48,.08);--radius:16px;--max:1160px}
@@ -14,107 +14,81 @@
 .stepper{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.stepper button{flex:1;min-width:105px;border:1px solid var(--line);background:#faf9fa;border-radius:8px;padding:9px 10px;text-align:left;color:var(--muted);font-size:.73rem;font-weight:800}.stepper button.active{background:var(--plum-light);border-color:#bcaac6;color:var(--plum-dark)}.stepper button.done{background:var(--teal-light);border-color:#b8d8d2;color:var(--green)}.stepper small{display:block;font-size:.6rem;font-weight:600;opacity:.8}.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.review-box{border:1px solid var(--line);border-radius:9px;overflow:hidden}.review-box h4{margin:0;padding:9px 11px;background:#f7f5f7;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em}.review-content{padding:13px;font-size:.87rem;min-height:126px}.problem{background:#fae9e8;color:#9a3735;border-bottom:2px solid #c56a67;padding:0 2px}.fixed{background:#e7f2ed;color:#23634e;border-bottom:2px solid #68a68e;padding:0 2px}.issue-list{display:grid;gap:8px;margin-top:12px}.issue{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:10px 12px}.issue.logged{background:var(--green-light);border-color:#b7d7c9}.issue p{font-size:.78rem;margin:3px 0 0;color:var(--muted)}.issue strong{font-size:.8rem}.issue .issue-tags{font-size:.63rem;color:var(--muted);font-weight:750;text-transform:uppercase;letter-spacing:.06em}.issue button{border:1px solid #cfc3d5;border-radius:7px;background:white;color:var(--plum);font-size:.7rem;font-weight:800;padding:7px 9px}.issue button:disabled{color:var(--green);border-color:#b7d7c9}.qc-tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:12px}.qc-tabs button{border:1px solid var(--line);border-radius:7px;padding:7px 10px;background:white;font-size:.73rem;font-weight:800}.qc-tabs button.active{background:var(--plum);color:white;border-color:var(--plum)}.qc-tabs button.resolved{border-color:#8ab8a4;color:var(--green)}.qc-content{background:#faf9fa;border:1px solid var(--line);border-radius:9px;padding:13px}.qc-content p{font-size:.8rem;margin:7px 0}.option{display:flex;justify-content:space-between;gap:10px;width:100%;text-align:left;padding:9px;border:1px solid var(--line);border-radius:7px;background:white;margin-top:7px;font-size:.77rem}.option.selected{border-color:var(--plum);background:var(--plum-light)}.option.good .score{color:var(--green)}.option.bad .score{color:var(--red)}.qc-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.completion{padding:18px;border-radius:10px;background:var(--teal-light);color:#225c51;text-align:center}.completion strong{font-size:1.1rem}
 .audio-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:16px}.audio-card{border:1px solid var(--line);border-radius:10px;padding:14px;background:#fff}.audio-card h4{font-size:.82rem;margin:0 0 10px}.audio-track{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:.77rem}.audio-track:first-of-type{border-top:0}.audio-track small{display:block;color:var(--muted);font-size:.67rem}.audio-track button{border:1px solid var(--line);background:#faf9fa;border-radius:7px;padding:6px 8px;color:var(--plum);font-size:.69rem;font-weight:800}.decision{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.decision button{padding:10px;border:1px solid var(--line);background:#fff;border-radius:8px;text-align:left;font-size:.75rem}.decision button.active{border-color:var(--plum);background:var(--plum-light)}.decision button strong{display:block;color:var(--plum-dark);margin-bottom:3px}.decision-result{margin-top:10px;padding:12px;border-radius:8px;background:#f5f1f6;font-size:.78rem;min-height:62px}.disclaimer{margin-top:16px;padding:12px 14px;border-left:3px solid var(--yellow);background:#fbf8ec;font-size:.76rem;color:#625a43;border-radius:0 8px 8px 0}
 .annotation-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px}.annotation-fields{display:grid;gap:10px}.annotation-field{border:1px solid var(--line);border-radius:8px;padding:10px}.annotation-field label{display:block;color:var(--muted);font-size:.62rem;text-transform:uppercase;letter-spacing:.09em;font-weight:850;margin-bottom:4px}.annotation-field select{width:100%;border:0;background:transparent;color:var(--ink);font-size:.82rem}.annotation-output{background:#211c2b;color:#f8f4fa;border-radius:10px;padding:15px;font: .75rem/1.7 ui-monospace,monospace;white-space:pre-wrap;min-height:190px;overflow:auto}.copy-btn{margin-top:8px;border:1px solid #b9a9c2;background:#fff;color:var(--plum);border-radius:7px;padding:7px 10px;font-size:.72rem;font-weight:800}.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.support-card{padding:23px;border:1px solid var(--line);background:#fff;border-radius:14px}.support-card h3{font-size:1.15rem;margin:0 0 9px}.support-card p{font-size:.86rem;color:var(--muted)}.software-list{display:grid;gap:0;margin-top:14px}.software-item{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-top:1px solid var(--line);font-size:.8rem}.software-item small{display:block;color:var(--muted);font-size:.72rem}.software-level{font-size:.65rem;font-weight:850;color:var(--teal);white-space:nowrap}.approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.approach-card{border:1px solid var(--line);background:#fff;padding:18px;border-radius:12px}.approach-card .step{font-size:.7rem;color:var(--teal);font-weight:850;letter-spacing:.1em}.approach-card h3{font-size:.93rem;margin:10px 0 7px}.approach-card p{font-size:.78rem;color:var(--muted);margin:0}.contact{background:var(--plum-dark);color:white;padding:54px 0}.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:24px}.contact h2{color:white;font-size:clamp(1.7rem,3.3vw,2.5rem);letter-spacing:-.04em;margin:9px 0}.contact p{color:#e3dbe7;max-width:68ch;font-size:.88rem}.contact a{background:#fff;color:var(--plum-dark);padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:850;white-space:nowrap}footer{padding:22px 0;background:#211c2b;color:#cfc5d5;font-size:.73rem}.footer-inner{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-.blindado-media{width:100%;overflow:hidden;border-radius:10px;background:#17151c;border:1px solid #292330}.blindado-media video{display:block;width:100%;max-height:520px;aspect-ratio:16/9;background:#17151c}.media-downloads{align-items:center}.media-downloads a{display:inline-flex;align-items:center;justify-content:center}
 
 /* Case 01 · FAS-inspired live spotting workspace, adapted to the portfolio's violet palette */
 .ws-intro-copy{max-width:820px;margin:0 0 26px}.ws-intro-copy h3{font-size:1.5rem;line-height:1.2;letter-spacing:-.03em;margin:10px 0}.ws-intro-copy p{font-size:.91rem;color:var(--ink-soft);max-width:78ch}
 .ws-workspace{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
 .ws-titlebar{display:flex;align-items:center;gap:12px;padding:10px 16px;background:#211c2b;color:rgba(255,255,255,.76);font: .68rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.05em}
 .ws-dots{display:flex;gap:6px}.ws-dots span{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.23)}.ws-dots span:nth-child(1){background:#d97d82}.ws-dots span:nth-child(2){background:#e1c27a}.ws-dots span:nth-child(3){background:#7eb79c}.ws-filename{color:#fff;font-weight:700}.ws-badge{margin-left:auto;padding:3px 9px;border:1px dashed rgba(255,255,255,.35);border-radius:4px;color:#d8c6e0;font-size:.59rem;letter-spacing:.1em;text-transform:uppercase}
+.ws-downloads{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.ws-downloads .ws-action{text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.issue-action{display:flex;align-items:center;justify-content:flex-end;gap:8px;white-space:nowrap}.log-arrow{display:inline-block;color:#26745b;font-size:1.05rem;font-weight:900;line-height:1;animation:logNudge 1.05s ease-in-out infinite}.log-arrow[hidden]{display:none}@keyframes logNudge{0%,100%{transform:translateX(0);opacity:.65}50%{transform:translateX(4px);opacity:1}}
+.annotation-fields{grid-template-columns:repeat(2,minmax(0,1fr))}.annotation-field input{width:100%;border:0;background:transparent;color:var(--ink);font-size:.82rem;padding:2px 0}.annotation-field.check-field{display:flex;align-items:center;gap:9px}.annotation-field.check-field label{margin:0}.annotation-field.check-field input{width:auto}
 .ws-toolbar{display:flex;align-items:end;flex-wrap:wrap;gap:10px 12px;padding:13px 16px;border-bottom:1px solid var(--line);background:#faf8fb}.ws-control{display:flex;flex-direction:column;gap:5px}.ws-control label,.ws-field label,.ws-tc label{font-size:.62rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}.ws-control select{min-width:104px;padding:7px 9px;border:1px solid #dcd4df;border-radius:7px;background:#fff;color:var(--ink);font-size:.75rem}.ws-control:first-child select{min-width:190px}.ws-toolbar-actions{display:flex;gap:7px;flex-wrap:wrap;margin-left:auto}.ws-action{padding:8px 10px;border:1px solid #cfc4d6;border-radius:7px;background:#fff;color:var(--plum-dark);font-size:.72rem;font-weight:800;white-space:nowrap}.ws-action:hover{border-color:var(--plum);background:var(--plum-light)}.ws-action[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
 .ws-main{display:grid;grid-template-columns:1.08fr .92fr;min-height:330px}.ws-preview{padding:16px;background:#211c2b;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}.ws-video{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:9px;background:#0b0a0e;border:1px solid #40374a}.ws-video video{display:block;width:100%;height:100%;object-fit:contain;background:#0b0a0e}.ws-video-label{position:absolute;top:9px;left:9px;z-index:2;padding:4px 7px;border-radius:4px;background:rgba(0,0,0,.56);color:rgba(255,255,255,.78);font: .55rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;pointer-events:none}.ws-subtitle{position:absolute;left:50%;bottom:7%;z-index:3;transform:translateX(-50%);width:max-content;max-width:88%;padding:7px 13px;border-radius:4px;background:rgba(0,0,0,.82);color:#fff;text-align:center;font-size:clamp(.75rem,1.35vw,.95rem);line-height:1.32;white-space:normal;text-wrap:balance;text-shadow:0 1px 2px #000;pointer-events:none}.ws-subtitle.empty{opacity:0}.ws-subtitle em{font-style:italic}.ws-video-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:10px;color:#c9bfce;font: .58rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.04em}.ws-video-meta strong{color:#fff;font-weight:500}
 .ws-editor{padding:16px;display:flex;flex-direction:column;gap:12px;background:#fff}.ws-editor-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:9px;border-bottom:1px solid var(--line);font-size:.78rem;font-weight:850;color:var(--plum-dark)}.ws-editor-index{font: .6rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted);letter-spacing:.06em}.ws-field{display:flex;flex-direction:column;gap:5px}.ws-source{padding:8px 10px;border:1px dashed #d8d0dc;border-radius:7px;background:#faf8fb;color:var(--ink-soft);font-size:.79rem}.ws-textarea{width:100%;min-height:82px;padding:9px 10px;border:1px solid #dcd4df;border-radius:7px;color:var(--ink);background:#fff;font: .83rem/1.45 Inter,ui-sans-serif,system-ui,sans-serif;resize:vertical}.ws-textarea:disabled{background:#f8f6f8;color:var(--muted)}.ws-duration-row{display:flex;align-items:center;gap:9px}.ws-duration-row input[type=range]{flex:1;accent-color:var(--plum)}.ws-duration-row input[type=number]{width:76px;padding:6px 7px;border:1px solid #dcd4df;border-radius:6px;font: .75rem ui-monospace,SFMono-Regular,Menlo,monospace}.ws-unit{color:var(--muted);font-size:.7rem}.ws-timecodes{display:flex;gap:10px;flex-wrap:wrap}.ws-tc{display:flex;flex:1;min-width:130px;flex-direction:column;gap:4px}.ws-tc input{width:100%;padding:6px 8px;border:1px solid #dcd4df;border-radius:6px;font: .72rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink)}.ws-tc input:disabled{background:#f8f6f8;color:var(--muted)}.ws-editor-note{font-size:.68rem;line-height:1.45;color:var(--muted);margin:0}
 .ws-timeline-wrap{padding:15px 16px 13px;border-top:1px solid var(--line);background:#faf8fb}.ws-timeline-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:9px}.ws-timeline-label{font-size:.63rem;font-weight:850;letter-spacing:.1em;text-transform:uppercase;color:var(--plum-dark)}.ws-timeline-hint{font-size:.68rem;color:var(--muted)}.ws-timeline{position:relative;height:100px;border-radius:7px;overflow:hidden;background:linear-gradient(180deg,#292231,#201a29);user-select:none;touch-action:pan-y;cursor:crosshair}.ws-waveform{position:absolute;inset:0;width:100%;height:100%;opacity:.9;pointer-events:none}.ws-cue{position:absolute;top:43px;height:42px;display:flex;align-items:center;padding:0 7px;overflow:hidden;border:1px solid rgba(214,194,224,.7);border-radius:4px;background:rgba(101,75,112,.68);cursor:grab;z-index:3;touch-action:none}.ws-cue:active,.ws-cue.dragging{cursor:grabbing}.ws-cue.selected{background:rgba(101,75,112,.94);border-color:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.22)}.ws-cue.active{background:rgba(38,124,120,.94);border-color:#c7eee8;box-shadow:0 0 0 2px rgba(199,238,232,.2)}.ws-cue.violation{border-color:#ed9b9b;background:rgba(169,68,66,.88)}.ws-cue-text{overflow:hidden;color:#fff;font: .58rem ui-monospace,SFMono-Regular,Menlo,monospace;white-space:nowrap;text-overflow:ellipsis}.ws-playhead{position:absolute;top:0;bottom:0;width:2px;z-index:5;background:#eee3f5;box-shadow:0 0 9px rgba(238,227,245,.78);pointer-events:none;transform:translateX(-1px)}.ws-playhead:before{content:"";position:absolute;top:0;left:-4px;width:10px;height:9px;background:#eee3f5;clip-path:polygon(0 0,100% 0,50% 100%)}.ws-timeline-legend{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding-top:8px;color:var(--muted);font-size:.64rem}.ws-legend-cue,.ws-legend-head{display:inline-block;width:8px;height:8px;margin-right:5px;border-radius:2px;background:var(--plum);vertical-align:middle}.ws-legend-head{width:2px;border-radius:0;background:var(--plum-dark)}
-.ws-validation{display:grid;grid-template-columns:repeat(5,minmax(0,1fr)) 1.55fr;gap:1px;background:var(--line);border-top:1px solid var(--line)}.ws-metric{display:flex;flex-direction:column;gap:3px;padding:11px 13px;background:#fff}.ws-metric-label{font: .58rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.ws-metric-value{font-size:1.15rem;font-weight:850;line-height:1.15;color:var(--plum-dark)}.ws-metric-state{font-size:.63rem;color:var(--muted)}.ws-metric[data-state="ok"] .ws-metric-state{color:var(--green)}.ws-metric[data-state="bad"] .ws-metric-state{color:var(--red)}.ws-summary{display:flex;align-items:center;padding:11px 14px;background:#f7f3f8;border-left:3px solid var(--teal);font-size:.74rem;line-height:1.4;color:var(--ink-soft)}.ws-summary[data-state="bad"]{background:#fbf2f1;border-left-color:var(--red);color:#913d3b}.ws-statusbar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 15px;background:#f7f5f7;border-top:1px solid var(--line);font: .6rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.03em;color:var(--muted)}.ws-control select:focus-visible,.ws-action:focus-visible,.ws-tc input:focus-visible,.ws-textarea:focus-visible,.ws-timeline:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.ws-validation{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) 1.55fr;gap:1px;background:var(--line);border-top:1px solid var(--line)}.ws-metric{display:flex;flex-direction:column;gap:3px;padding:11px 13px;background:#fff}.ws-metric-label{font: .58rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.ws-metric-value{font-size:1.15rem;font-weight:850;line-height:1.15;color:var(--plum-dark)}.ws-metric-state{font-size:.63rem;color:var(--muted)}.ws-metric[data-state="ok"] .ws-metric-state{color:var(--green)}.ws-metric[data-state="bad"] .ws-metric-state{color:var(--red)}.ws-summary{display:flex;align-items:center;padding:11px 14px;background:#f7f3f8;border-left:3px solid var(--teal);font-size:.74rem;line-height:1.4;color:var(--ink-soft)}.ws-summary[data-state="bad"]{background:#fbf2f1;border-left-color:var(--red);color:#913d3b}.ws-statusbar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 15px;background:#f7f5f7;border-top:1px solid var(--line);font: .6rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.03em;color:var(--muted)}.ws-fixed-spec strong{display:inline-flex;align-items:center;min-height:34px;padding:7px 9px;border:1px solid #dcd4df;border-radius:7px;background:#fff;color:var(--ink);font-size:.75rem;font-weight:750}.ws-control select:focus-visible,.ws-action:focus-visible,.ws-tc input:focus-visible,.ws-textarea:focus-visible,.ws-timeline:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 
-@media(max-width:900px){.hero-grid,.case-grid,.audio-grid,.annotation-grid{grid-template-columns:1fr}.hero-aside{max-width:600px}.case-copy{max-width:760px}.approach-grid{grid-template-columns:1fr 1fr}}@media(max-width:680px){.container{width:min(var(--max),calc(100% - 30px))}.menu-toggle{display:block}.nav-wrap{min-height:68px}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:16px 22px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:13px}.nav-links.open{display:flex}.hero{padding:58px 0}.hero-grid{gap:26px}.hero h1{font-size:2.65rem}.intro-inner{padding-block:14px}.section{padding:58px 0}.sub-workspace,.review-grid,.support-grid{grid-template-columns:1fr}.screen-preview{min-height:220px}.cue-row{grid-template-columns:90px 1fr}.cue-row button{grid-column:2;justify-self:start}.metrics{grid-template-columns:repeat(3,1fr)}.approach-grid{grid-template-columns:1fr 1fr}.contact-inner{display:block}.contact a{display:inline-block;margin-top:12px}.decision{grid-template-columns:1fr}.panel-body{padding:12px}.stepper button{min-width:calc(50% - 6px)}}
+@media(max-width:900px){.hero-grid,.case-grid,.audio-grid,.annotation-grid{grid-template-columns:1fr}.hero-aside{max-width:600px}.case-copy{max-width:760px}.approach-grid{grid-template-columns:1fr 1fr}}@media(max-width:680px){.annotation-fields{grid-template-columns:1fr}.container{width:min(var(--max),calc(100% - 30px))}.menu-toggle{display:block}.nav-wrap{min-height:68px}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:16px 22px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:13px}.nav-links.open{display:flex}.hero{padding:58px 0}.hero-grid{gap:26px}.hero h1{font-size:2.65rem}.intro-inner{padding-block:14px}.section{padding:58px 0}.sub-workspace,.review-grid,.support-grid{grid-template-columns:1fr}.screen-preview{min-height:220px}.cue-row{grid-template-columns:90px 1fr}.cue-row button{grid-column:2;justify-self:start}.metrics{grid-template-columns:repeat(3,1fr)}.approach-grid{grid-template-columns:1fr 1fr}.contact-inner{display:block}.contact a{display:inline-block;margin-top:12px}.decision{grid-template-columns:1fr}.panel-body{padding:12px}.stepper button{min-width:calc(50% - 6px)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="#top"><span class="brand-mark">AL</span><span class="brand-name">Brazilian Portuguese<small>Subtitling · SDH · Linguistic QA</small></span></a><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰</button><nav class="nav-links" id="mainNav"><a href="#subtitling">Subtitling</a><a href="#blindado">Blindado / SDH</a><a href="#post-editing">Post-editing</a><a href="#dialect">Editorial decisions</a><a href="#software">Tools</a><a class="nav-cta" href="#contact">Contact</a></nav></div></header>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="#top"><span class="brand-mark">AL</span><span class="brand-name">Brazilian Portuguese<small>Subtitling · SDH · Linguistic QA</small></span></a><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰</button><nav class="nav-links" id="mainNav"><a href="#subtitling">Subtitling</a><a href="#subtitling">Blindado · Workstation</a><a href="#post-editing">Post-editing</a><a href="#dialect">Editorial decisions</a><a href="#software">Tools</a><a class="nav-cta" href="mailto:ariane.etimo@gmail.com">Contact</a></nav></div></header>
 <main id="top">
-<section class="hero"><div class="container hero-grid"><div><span class="eyebrow">Audiovisual localization · EN ↔ PT-BR</span><h1>Subtitles that are <em>accurate</em>, <em></em>natural</em> and accessible.</h1><p class="hero-description">I create, adapt and review subtitles for Brazilian Portuguese, combining linguistic precision, audiovisual awareness and technical quality assurance, from timed translation to SDH and post-editing.</p><div class="hero-meta"><span class="pill">Subtitling from scratch</span><span class="pill">CC / SDH</span><span class="pill">AI subtitle review</span><span class="pill">Linguistic QA</span></div><div class="hero-actions"><a class="btn-primary" href="#blindado">Explore the work ↓</a><a class="btn-secondary" href="#software">Tools & workflow</a></div></div><aside class="hero-aside"><div class="big">15+ yrs</div><p>Working across language, translation, localization.</p><hr><div class="mini-stat"><span>Language pair</span><strong>EN ↔ PT-BR</strong></div><div class="mini-stat"><span>Formats</span><strong>SRT · STL</strong></div><div class="mini-stat"><span>SDH PE capacity</span><strong>~90 video min/week</strong></div><hr><div class="mini-stat"><span>Primary tool</span><strong>Subtitle Edit</strong></div></aside></div></section>
+<section class="hero"><div class="container hero-grid"><div><span class="eyebrow">Audiovisual localization · EN ↔ PT-BR</span><h1>Subtitles that are <em>accurate</em>, <em></em>natural</em><br> and accessible.</h1><p class="hero-description">I create, adapt and review subtitles for Brazilian Portuguese, combining linguistic precision, audiovisual awareness and technical quality assurance, <br>from timed translation to SDH and post-editing.</p><div class="hero-meta"><span class="pill">Subtitling from scratch</span><span class="pill">CC / SDH</span><span class="pill">AI subtitle review</span><span class="pill">Linguistic QA</span></div><div class="hero-actions"><a class="btn-primary" href="#subtitling">Explore the work ↓</a><a class="btn-secondary" href="#software">Tools & workflow</a></div></div><aside class="hero-aside"><div class="big">15+ yrs</div><p>Working across language, translation, and localization.</p><hr><div class="mini-stat"><span>Language pair</span><strong>EN ↔ PT-BR</strong></div><div class="mini-stat"><span>Formats</span><strong>SRT · STL</strong></div><div class="mini-stat"><span>SDH PE capacity</span><strong>~90 video min/week</strong></div><hr><div class="mini-stat"><span>Primary tool</span><strong>Subtitle Edit</strong></div></aside></div></section>
 <section class="intro-strip"><div class="container intro-inner"><p><strong>Language pair:</strong> English (UK/US) ↔ Brazilian Portuguese</p><div class="strip-items"><span>Translation</span><span>Transcription</span><span>Spotting</span><span>SDH</span><span>Post-editing</span><span>QC</span></div></div></section>
 
 <section class="section" id="subtitling">
   <div class="container">
     <div class="section-heading">
-      <span class="eyebrow">Case study 01 · Creation & spotting</span>
-      <h2>Subtitling from scratch</h2>
-      <p>Explore a real playback-based spotting workspace. Play the excerpt, follow the active caption across the waveform, edit a cue and change the technical limits to see the QC results update in real time.</p>
-    </div>
-
-    <div class="case-copy ws-intro-copy">
-      <span class="case-number">01 / Translation + spotting</span>
-      <h3>Every subtitle has to work on screen.</h3>
-      <p>Subtitling requires balancing meaning, natural spoken language, reading speed, timing and visual context. This demonstration uses the same short-film excerpt featured in the CC/SDH case below: the original audio is in Brazilian Portuguese and the displayed English captions are the authored target track.</p>
-      <p>Select a cue in the waveform, adjust its text or timing, and compare different technical specifications. Changes are temporary and remain in this browser session; the original media and caption files are not modified.</p>
-      <div class="skill-tags">
-        <span class="tag">Playback-synced spotting</span>
-        <span class="tag">Waveform timeline</span>
-        <span class="tag">CPS / CPL</span>
-        <span class="tag">Cue timing</span>
-        <span class="tag">Technical QC</span>
+      <span class="eyebrow">Case study 01 · Real excerpt</span>
+      <h2><em>Blindado</em>, English CC/SDH workstation</h2>
+      <p>A single playback-based demonstration of subtitle spotting, caption editing and technical QC. <br>Select a cue on the waveform to inspect its text, timing and reading metrics.</p>
+      <div class="skill-tags" aria-label="Case deliverables and skills">
+        <span class="tag">English CC/SDH</span>
+        <span class="tag">SRT</span>
+        <span class="tag">WebVTT</span>
+        <span class="tag">QC</span>
+      </div>
+      <div class="ws-downloads" aria-label="Download caption files">
+        <a class="ws-action" href="captions/blindado-en.srt" download>Download .srt</a>
+        <a class="ws-action" href="captions/blindado-en.vtt" download>Download .vtt</a>
       </div>
     </div>
 
     <div class="ws-workspace" id="subtitling-workspace">
       <div class="ws-titlebar">
         <div class="ws-dots"><span></span><span></span><span></span></div>
-        <span class="ws-filename">Blindado_excerpt · EN_CC-SDH.vtt</span>
-        <span class="ws-badge">Interactive · live playback</span>
+        <span class="ws-filename">Blindado · English CC/SDH</span>
+        <span class="ws-badge">Single interactive sample</span>
       </div>
 
       <div class="ws-toolbar">
         <div class="ws-control">
           <label for="ws-profile">Technical profile</label>
           <select id="ws-profile">
-            <option value="general" selected>General · 17 CPS / 37 CPL</option>
-            <option value="conservative">Conservative · 15 CPS / 32 CPL</option>
-            <option value="netflix">Netflix EN adult · 20 CPS / 42 CPL reference</option>
+            <option value="netflix" selected>Netflix English adult · 20 CPS / 42 CPL / 2 lines</option>
             <option value="sdh">Flexible SDH review · 22 CPS / 42 CPL / 3 lines</option>
-            <option value="custom">Custom settings</option>
+            <option value="custom">Custom settings · CPS and line count</option>
           </select>
         </div>
         <div class="ws-control">
           <label for="ws-rate">Reading speed</label>
           <select id="ws-rate">
-            <option value="15">15 CPS</option>
-            <option value="17" selected>17 CPS</option>
-            <option value="20">20 CPS</option>
+            <option value="20" selected>20 CPS</option>
             <option value="22">22 CPS</option>
           </select>
         </div>
         <div class="ws-control">
-          <label for="ws-cpl">Line length</label>
-          <select id="ws-cpl">
-            <option value="32">32 CPL</option>
-            <option value="37" selected>37 CPL</option>
-            <option value="42">42 CPL</option>
-          </select>
+          <label>Line length</label>
+          <strong>42 CPL</strong>
         </div>
         <div class="ws-control">
           <label for="ws-lines">Maximum lines</label>
           <select id="ws-lines">
             <option value="2" selected>2 lines</option>
             <option value="3">3 lines</option>
-          </select>
-        </div>
-        <div class="ws-control">
-          <label for="ws-min-duration">Minimum duration</label>
-          <select id="ws-min-duration">
-            <option value="0.8">0.80 s</option>
-            <option value="1" selected>1.00 s</option>
-            <option value="1.2">1.20 s</option>
-          </select>
-        </div>
-        <div class="ws-control">
-          <label for="ws-gap">Minimum gap</label>
-          <select id="ws-gap">
-            <option value="0">No gap check</option>
-            <option value="0.08" selected>80 ms</option>
-            <option value="0.12">120 ms</option>
           </select>
         </div>
         <div class="ws-toolbar-actions">
@@ -128,11 +102,12 @@
         <div class="ws-preview">
           <div class="ws-video" id="ws-video-box">
             <video id="ws-player" controls playsinline preload="metadata" aria-label="Blindado excerpt with synchronized English captions">
-              <source src="assets/blindado-excerpt.mp4" type="video/mp4">
-              <track id="ws-track" kind="captions" src="captions/blindado-en.vtt" srclang="en" label="English CC/SDH" default>
+              <source src="https://media.githubusercontent.com/media/alc-etimo/vsi-cc-sdh/73f05b79fd6fb42bc774f0023021ed4ac8f8d96d/assets/blindado%20corte%201.mp4" type="video/mp4">
+              <source src="https://raw.githubusercontent.com/alc-etimo/vsi-cc-sdh/73f05b79fd6fb42bc774f0023021ed4ac8f8d96d/assets/blindado%20corte%201.mp4" type="video/mp4">
+              <track id="ws-track" kind="captions" srclang="en" label="English CC/SDH">
               Your browser does not support embedded video playback.
             </video>
-            <span class="ws-video-label">Source audio · PT-BR / Target captions · EN</span>
+            <span class="ws-video-label">Blindado · PT-BR source / English CC/SDH</span>
             <div class="ws-subtitle" id="ws-subtitle" aria-live="polite">Loading captions…</div>
           </div>
           <div class="ws-video-meta">
@@ -211,96 +186,44 @@
           <span class="ws-metric-state" id="ws-m-lines-state">—</span>
         </div>
         <div class="ws-metric" id="ws-m-duration">
-          <span class="ws-metric-label">Duration</span>
+          <span class="ws-metric-label">Cue duration</span>
           <span class="ws-metric-value" id="ws-m-duration-val">—</span>
-          <span class="ws-metric-state" id="ws-m-duration-state">—</span>
-        </div>
-        <div class="ws-metric" id="ws-m-gap">
-          <span class="ws-metric-label">Min gap</span>
-          <span class="ws-metric-value" id="ws-m-gap-val">—</span>
-          <span class="ws-metric-state" id="ws-m-gap-state">—</span>
+          <span class="ws-metric-state" id="ws-m-duration-state">Timing reference</span>
         </div>
         <div class="ws-summary" id="ws-summary" data-state="ok">Select a cue to inspect its technical metrics.</div>
       </div>
 
       <div class="ws-statusbar">
         <span id="ws-status-left">Loading · waiting for video and captions</span>
-        <span id="ws-status-right">EN CC/SDH · temporary browser-side edits</span>
+        <span id="ws-status-right">EN CC/SDH · temporary browser-side edits · refined sample</span>
       </div>
     </div>
-    <p class="muted-note" style="margin:12px 0 0">This is an interactive technical demonstration. The waveform is a visual spotting guide; the vertical playhead, caption overlay and timecodes follow the actual video playback. Edits are not written back to the source SRT/VTT.</p>
+    <p class="muted-note" style="margin:12px 0 0">The waveform is a visual spotting guide. The vertical playhead, caption overlay and timecodes follow the actual video playback. <br>The sample includes temporary editorial refinements for a clean technical demonstration; edits are not written back to the source SRT/VTT.</p>
   </div>
 </section>
 
-<section class="section alt" id="blindado">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">Case study 02 · Real work</span>
-      <h2>CC / SDH authoring — <em>Blindado</em></h2>
-      <p>A selected excerpt from a Brazilian short film, with English CC/SDH authored from scratch. The embedded sample demonstrates dialogue, speaker attribution, relevant sound cues and music, with synchronized captions.</p>
-    </div>
-    <div class="case-grid">
-      <div class="case-copy">
-        <span class="case-number">02 / Accessibility</span>
-        <h3>Meaning includes more than dialogue.</h3>
-        <p>The authoring work includes dialogue, relevant non-speech audio, music and lyrics, vocal delivery and speaker identification when the speaker is not visually clear.</p>
-        <p>Descriptions are chosen according to their narrative relevance and the project’s style guide — not added mechanically to every sound.</p>
-        <h4>What the sample demonstrates</h4>
-        <ul class="check-list">
-          <li>English CC/SDH authored from audio/video</li>
-          <li>Speaker identification and off-screen attribution where needed</li>
-          <li>Relevant sound effects and non-speech vocalizations</li>
-          <li>Music and lyrics where present</li>
-          <li>Subtitle timing, readability and final QC</li>
-        </ul>
-        <div class="skill-tags">
-          <span class="tag">English CC/SDH</span>
-          <span class="tag">SRT</span>
-          <span class="tag">WebVTT</span>
-          <span class="tag">QC</span>
-        </div>
-        <div class="disclaimer"><strong>Publication note:</strong> This excerpt is presented as a portfolio sample. Any required permissions or clearances for public display of the film excerpt and soundtrack should be confirmed separately.</div>
-      </div>
-      <div class="panel">
-        <div class="panel-top">
-          <span class="panel-title">Blindado · English CC/SDH sample</span>
-          <span class="status" id="blindadoStatus">Ready to play</span>
-        </div>
-        <div class="panel-body">
-          <div class="blindado-media">
-            <video id="blindadoVideo" controls playsinline preload="metadata" aria-label="Blindado excerpt with English closed captions and subtitles">
-              <source src="assets/blindado-excerpt.mp4" type="video/mp4">
-              <track id="blindadoTrack" kind="captions" src="captions/blindado-en.vtt" srclang="en" label="English CC/SDH" default>
-              Your browser does not support embedded video. Use the download links below.
-            </video>
-          </div>
-          <div class="toolbar media-downloads" style="margin-top:14px">
-            <button class="tool-btn" id="ccToggle" type="button" aria-pressed="true">Captions on</button>
-            <a class="tool-btn" href="captions/blindado-en.srt" download style="text-decoration:none">Download SRT</a>
-            <a class="tool-btn" href="captions/blindado-en.vtt" download style="text-decoration:none">Download WebVTT</a>
-          </div>
-          <div class="metrics">
-            <div class="metric"><small>Caption track</small><strong>English CC/SDH</strong></div>
-            <div class="metric"><small>Available formats</small><strong>SRT · WebVTT</strong></div>
-            <div class="metric"><small>Playback</small><strong id="videoTime">00:00</strong></div>
-          </div>
-          <p class="muted-note">Captions are enabled by default. Use the player’s CC control or the button above to switch them on or off. No poster image is assumed; the video opens directly in the player.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="section" id="post-editing"><div class="container"><div class="section-heading"><span class="eyebrow">Case study 02 · Review & post-editing</span><h2>From machine output to reviewed subtitles</h2><p>A separate fictional SDH post-editing exercise inspired by recurring subtitle QA challenges. <br>It is independent of the <i>Blindado</i> excerpt; all dialogue and errors are original illustrative examples, not material from confidential projects.</p></div><div class="panel"><div class="panel-top"><span class="panel-title">Subtitle review workstation</span><span class="status">Fictional workflow demo</span></div><div class="panel-body"><div class="stepper" id="peStepper"><button class="active" data-step="review">01 · Review<small>Identify issues</small></button><button data-step="post">02 · Post-edit<small>Log corrections</small></button><button data-step="qc">03 · QC<small>Resolve checks</small></button><button data-step="delivery">04 · Delivery<small>Export report</small></button></div><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px"><strong id="peStepTitle" style="font-size:.85rem">Step 1 of 4 · Review machine-generated subtitles</strong><div class="toolbar" style="margin:0"><button class="tool-btn" id="runQc">Run QC</button><button class="tool-btn" id="nextPe" disabled>Next step →</button></div></div><div class="review-grid"><div class="review-box"><h4 id="leftReviewTitle">Machine-generated output</h4><div class="review-content" id="rawReview">[WIND BLOWING]<br><span class="problem">I was waiting on you.</span><br><span class="problem">[DOOR CLOSING]</span><br>We should of left earlier.</div></div><div class="review-box"><h4 id="rightReviewTitle">Human-reviewed version</h4><div class="review-content" id="editedReview">[wind howling]<br>I was waiting for you.<br>[door slams]<br>We should have left earlier.</div></div></div><br><div id="peRightPanel"><div class="issue-list" id="issueList"></div></div><div id="peCompletion" style="display:none;margin-top:14px" class="completion"><strong>Review workflow complete.</strong><p style="margin:5px 0 0;font-size:.8rem">All illustrative issues have been resolved. The report can now be downloaded.</p><button class="copy-btn" id="copyReport">Download edit & QC report</button></div><p class="muted-note" style="margin:12px 0 0">Human judgement remains responsible for meaning, speaker attribution, narrative relevance and editorial decisions. Automated checks support, but do not replace, audiovisual review.</p></div></div></div></section>
 
-<section class="section" id="post-editing"><div class="container"><div class="section-heading"><span class="eyebrow">Case study 03 · Review & post-editing</span><h2>From machine output to reviewed subtitles</h2><p>A fictional SDH post-editing workflow inspired by recurring subtitle QA challenges.<br>The dialogue and errors are original illustrative examples, not material from confidential projects.</p></div><div class="panel"><div class="panel-top"><span class="panel-title">Subtitle review workstation</span><span class="status">Fictional workflow demo</span></div><div class="panel-body"><div class="stepper" id="peStepper"><button class="active" data-step="review">01 · Review<small>Identify issues</small></button><button data-step="post">02 · Post-edit<small>Log corrections</small></button><button data-step="qc">03 · QC<small>Resolve checks</small></button><button data-step="delivery">04 · Delivery<small>Export report</small></button></div><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px"><strong id="peStepTitle" style="font-size:.85rem">Step 1 of 4 · Review machine-generated subtitles</strong><div class="toolbar" style="margin:0"><button class="tool-btn" id="runQc">Run QC</button><button class="tool-btn" id="nextPe" disabled>Next step →</button></div></div><div class="review-grid"><div class="review-box"><h4 id="leftReviewTitle">Machine-generated output</h4><div class="review-content" id="rawReview">[WIND BLOWING]<br><span class="problem">I was waiting on you.</span><br><span class="problem">[DOOR CLOSE]</span><br>We should of left earlier.</div></div><div class="review-box"><h4 id="rightReviewTitle">Human-reviewed version</h4><div class="review-content" id="editedReview">[wind howling]<br>I was waiting for you.<br>[door slams]<br>We should have left earlier.</div></div></div><div id="peRightPanel"><div class="issue-list" id="issueList"></div></div><div id="peCompletion" style="display:none;margin-top:14px" class="completion"><strong>Review workflow complete.</strong><p style="margin:5px 0 0;font-size:.8rem">All illustrative issues have been resolved. The report can now be copied.</p><button class="copy-btn" id="copyReport" type="button">Download edit &amp; QC report</button></div><p class="muted-note" style="margin:12px 0 0">Human judgement remains responsible for meaning, speaker attribution, narrative relevance and editorial decisions. Automated checks support, but do not replace, audiovisual review.</p></div></div></div></section>
+<section class="section alt" id="dialect"><div class="container"><div class="section-heading"><span class="eyebrow">Case study 03 · Editorial judgement</span><h2>Preserve voice. <br>Don’t normalize by default.</h2><p>Dialect markers, register and character voice can carry meaning. The right choice depends on the intention, intelligibility, and narrative relevance, as well as the client's style guide.</p></div><div class="case-grid"><div class="case-copy"><span class="case-number">03 / Language variation</span><h3>Consistency is not the same as standardization.</h3><p>For Deaf and Hard of Hearing viewers, the subtitle may be the only access to a speaker’s regional or social language cues. Removing every non-standard form can erase characterization.</p><p>At the same time, spelling variation should not be introduced just to imitate an accent. The decision needs to be deliberate and consistent.</p><div class="skill-tags"><span class="tag">Dialect</span><span class="tag">Register</span><span class="tag">Character voice</span><span class="tag">Style guide</span></div></div><div class="panel"><div class="panel-top"><span class="panel-title">Editorial decision lab</span><span class="status">Fictional dialogue</span></div><div class="panel-body"><div class="field-block"><label class="field-label">Fictional source line</label><div style="padding:13px;border:1px solid var(--line);border-radius:8px;background:#faf9fa;font-size:.9rem">“You reckon we’re heading back before the rain hits?”</div></div><div class="field-block"><label class="field-label">Choose the editorial treatment</label><div class="decision"><button data-dialect="preserve" class="active"><strong>Preserve marked voice</strong>“Cê acha que a gente volta antes da chuva?”</button><button data-dialect="normalize"><strong>Normalize spelling</strong>“Você acha que a gente volta antes da chuva?”</button></div></div><div class="decision-result" id="dialectResult"><strong>Selected: preserve marked voice.</strong><br>Appropriate when the colloquial form is audible, consistent with the character and permitted by the project style guide.</div><div class="disclaimer">This is a newly written fictional example. It does not reproduce dialogue from an NDA-protected project.</div></div></div></div></div></section>
 
-<section class="section alt" id="dialect"><div class="container"><div class="section-heading"><span class="eyebrow">Case study 04 · Editorial judgement</span><h2>Preserve voice.<br> Don’t normalize by default.</h2><p>Dialect markers, register and character voice can carry meaning. The right choice depends on whether a form is intentional, intelligible and narratively relevant—and on the client’s style guide.</p></div><div class="case-grid"><div class="case-copy"><span class="case-number">04 / Language variation</span><h3>Consistency is not the same <br>as standardization.</h3><p>For Deaf and Hard of Hearing viewers, the subtitle may be the only access to a speaker’s regional or social language cues. Removing every non-standard form can erase characterization.</p><p>At the same time, spelling variation should not be introduced just to imitate an accent. The decision needs to be deliberate and consistent.</p><div class="skill-tags"><span class="tag">Dialect</span><span class="tag">Register</span><span class="tag">Character voice</span><span class="tag">Style guide</span></div></div><div class="panel"><div class="panel-top"><span class="panel-title">Editorial decision lab</span><span class="status">Fictional dialogue</span></div><div class="panel-body"><div class="field-block"><label class="field-label">Fictional source line</label><div style="padding:13px;border:1px solid var(--line);border-radius:8px;background:#faf9fa;font-size:.9rem">“You reckon we’re heading back before the rain hits?”</div></div><div class="field-block"><label class="field-label">Choose the editorial treatment</label><div class="decision"><button data-dialect="preserve" class="active"><strong>Preserve marked voice</strong>“Cê acha que a gente volta antes da chuva?”</button><button data-dialect="normalize"><strong>Normalize spelling</strong>“Você acha que a gente volta antes da chuva?”</button></div></div><div class="decision-result" id="dialectResult"><strong>Selected: preserve marked voice.</strong><br>Appropriate when the colloquial form is audible, consistent with character and allowed by project guidelines.</div><div class="disclaimer">This is a newly written fictional example. It does not reproduce dialogue from an NDA-protected project.</div></div></div></div></div></section>
-
-<section class="section" id="annotation"><div class="container"><div class="section-heading"><span class="eyebrow">Workflow automation · Structured metadata</span><h2>Human analysis, supported by lightweight automation.</h2><p>In a meadata input workflow, each subtitle event required structured annotation. I performed the contextual analysis and built a small Python helper to support formatting and structuring the output.</p></div><div class="annotation-grid"><div class="panel"><div class="panel-top"><span class="panel-title">Annotation fields</span><span class="status">Interactive mockup</span></div><div class="panel-body"><div class="annotation-fields"><div class="annotation-field"><label for="actor">Actor</label><select id="actor"><option>Speaker A</option><option>Speaker B</option><option>Off-screen speaker</option><option>Unknown / unclear</option></select></div><div class="annotation-field"><label for="character">Character</label><select id="character"><option>Lead character</option><option>Supporting character</option><option>Announcer</option><option>Unidentified voice</option></select></div><div class="annotation-field"><label for="action">Action</label><select id="action"><option>Speaking</option><option>Shouting</option><option>Whispering</option><option>Crying</option><option>Laughing</option><option>Non-speech vocalization</option></select></div><div class="annotation-field"><label for="feeling">Feeling</label><select id="feeling"><option>Concerned</option><option>Angry</option><option>Relieved</option><option>Amused</option><option>Neutral</option><option>Unclear</option></select></div><div class="annotation-field"><label for="relevance">Narrative relevance</label><select id="relevance"><option>Relevant</option><option>Not relevant</option><option>Requires context review</option></select></div></div></div></div><div class="panel"><div class="panel-top"><span class="panel-title">Structured output</span><span class="status">Live preview</span></div><div class="panel-body"><p style="font-size:.8rem;color:var(--muted);margin-top:0">The fields below update the output structure. This demonstrates formatting support, not automated emotion or character detection.</p><div class="annotation-output" id="annotationOutput">Speaker A | Lead character | Speaking | Concerned | Relevant</div><button class="copy-btn" id="copyAnnotation">Copy formatted annotation</button><div class="disclaimer">Human analysis determines actor, character, action, feeling and relevance. The helper supports repeatable formatting and structure only.</div></div></div></div></div></section>
+<section class="section" id="annotation"><div class="container"><div class="section-heading"><span class="eyebrow">Workflow automation · Structured metadata</span><h2>Human analysis, supported by lightweight automation.</h2><p>In a metadata input project, each subtitle event required structured annotation. I performed the contextual analysis and built a small Python helper to support formatting and structuring the output.</p></div><div class="annotation-grid"><div class="panel"><div class="panel-top"><span class="panel-title">Annotation fields</span><span class="status">Interactive mockup</span></div><div class="panel-body"><div class="annotation-fields">
+<div class="annotation-field"><label for="annSpeaker">Speaker (S)</label><select id="annSpeaker"><option>Speaker 1</option><option>Speaker 2</option><option>Narrator</option><option>Singer 1</option><option>Off-screen speaker</option></select></div>
+<div class="annotation-field"><label for="annActor">Actor / singer (A)</label><select id="annActor"><option>Actor 1</option><option>Actor 2</option><option>Performer 1</option><option>Unknown</option></select></div>
+<div class="annotation-field"><label for="annLanguage">Language (L)</label><select id="annLanguage"><option>English</option><option>Portuguese</option><option>Other</option></select></div>
+<div class="annotation-field"><label for="annTone">Tone (T)</label><select id="annTone"><option>Neutral</option><option>Sarcastic</option><option>Concerned</option><option>Angry</option><option>Whispering</option><option>Unclear</option></select></div>
+<div class="annotation-field"><label for="annSong">Song title (N, optional)</label><input id="annSong" type="text" value="" placeholder="Add a song title only when applicable"></div>
+<div class="annotation-field"><label for="annOrientation">Orientation (O)</label><select id="annOrientation"><option>Bottom centre</option><option>Top centre</option><option>Bottom right</option><option>Bottom left</option><option>Top right</option><option>Top left</option></select></div>
+<div class="annotation-field"><label for="annSubject">Caption subject (sub)</label><select id="annSubject"><option>Speaker 1</option><option>Speaker 2</option><option>Narrator</option><option>Animal</option><option>Sound source</option></select></div>
+<div class="annotation-field"><label for="annAction">Caption action (action)</label><select id="annAction"><option>speaks</option><option>speaks sarcastically</option><option>whispers</option><option>shouts</option><option>laughs</option><option>music plays</option><option>knocks on the door</option></select></div>
+<div class="annotation-field"><label for="annCaption">Caption text (English only)</label><input id="annCaption" type="text" value="Speaker 1 speaks." placeholder="Enter the English caption"></div>
+<div class="annotation-field check-field"><input id="annPlot" type="checkbox"><label for="annPlot">Plot pertinent caption (P)</label></div>
+</div></div></div><div class="panel"><div class="panel-top"><span class="panel-title">Structured output</span><span class="status">Live preview</span></div><div class="panel-body"><p style="font-size:.8rem;color:var(--muted);margin-top:0">One anonymized example. Select the metadata on the left to update the formatted output. This demonstrates formatting support, not automated speaker, actor or tone detection.</p><div class="annotation-output" id="annotationOutput" aria-live="polite">{S: Speaker 1 || A: Actor 1 || L: English || T: Neutral || O: Bottom centre}
+[sub: Speaker 1 || action: speaks || cap: Speaker 1 speaks.]</div><button class="copy-btn" id="copyAnnotation">Copy formatted annotation</button><div class="disclaimer">Human analysis determines speaker, actor, language, tone, song metadata, orientation and caption relevance. The helper supports repeatable formatting and structure only.</div></div></div></div></div></section>
 
 <section class="section alt" id="software"><div class="container"><div class="section-heading"><span class="eyebrow">Tools & experience</span><h2>A practical, quality-focused workflow.</h2><p>Experience across audiovisual localization, subtitle production and review, supported by dedicated subtitling software and project-specific guidelines.</p></div><div class="support-grid"><article class="support-card"><h3>Subtitling software</h3><div class="software-list"><div class="software-item"><div><strong>Subtitle Edit</strong><small>Primary subtitling and subtitle review tool.</small></div><span class="software-level">Primary</span></div><div class="software-item"><div><strong>EZTitles</strong><small>Shot-change detection; exports shot changes for Subtitle Edit.</small></div><span class="software-level">Used</span></div><div class="software-item"><div><strong>Subtitle Workshop</strong><small>Used earlier in my career.</small></div><span class="software-level">Experience</span></div><div class="software-item"><div><strong>Whisper</strong><small>Speech recognition to accelerate transcription; outputs are human-reviewed.</small></div><span class="software-level">Workflow tool</span></div><div class="software-item"><div><strong>Ooona Toolkit</strong><small>No prior professional use; available to learn and onboard.</small></div><span class="software-level">Onboarding</span></div></div></article><article class="support-card"><h3>Production & delivery</h3><div class="software-list"><div class="software-item"><div><strong>Cloud subtitling platforms</strong><small>Professional project use for major streaming clients; platform details under NDA.</small></div></div><div class="software-item"><div><strong>Formats</strong><small>SRT and STL delivery, depending on project requirements.</small></div></div><div class="software-item"><div><strong>SDH authoring</strong><small>From source audio/video and from existing subtitle files.</small></div></div><div class="software-item"><div><strong>SDH post-editing</strong><small>English SDH PE; PT-BR capacity approximately 90 source-video minutes per week, subject to schedule.</small></div></div></div></article></div></div></section>
 <section class="section"><div class="container"><div class="section-heading"><span class="eyebrow">Quality assurance</span><h2>How I approach each assignment.</h2><p>A consistent process, adapted to the brief, technical specifications and intended audience.</p></div><div class="approach-grid"><article class="approach-card"><span class="step">01</span><h3>Understand the brief</h3><p>Review project guidelines, reference materials, audience, style and technical requirements.</p></article><article class="approach-card"><span class="step">02</span><h3>Work in context</h3><p>Check source audio and video, identify context and preserve meaning, tone and intent.</p></article><article class="approach-card"><span class="step">03</span><h3>Review systematically</h3><p>Check accuracy, naturalness, terminology, timing, segmentation and readability.</p></article><article class="approach-card"><span class="step">04</span><h3>Deliver consistently</h3><p>Apply agreed conventions, resolve issues and ensure that the final file meets specifications.</p></article></div></div></section>
 <section class="contact" id="contact"><div class="container contact-inner"><div><span class="eyebrow" style="color:#c8b5d1">Availability</span><h2>Looking for a Brazilian Portuguese subtitling partner?</h2><p>Available to discuss subtitling, SDH, subtitle review, linguistic QA and audiovisual localization assignments. Capacity for PT-BR SDH post-editing: approximately 90 source-video minutes per week, depending on schedule.</p></div><a href="mailto:ariane.etimo@gmail.com">Get in touch ↗</a></div></section>
-</main><footer><div class="container footer-inner"><span>Brazilian Portuguese Subtitling & Linguistic QA</span><span>EN → PT-BR · Audiovisual localization · © 2026</span></div></footer>
+</main><footer><div class="container footer-inner"><span>Brazilian Portuguese Subtitling & Linguistic QA</span><span>EN ↔ PT-BR · Audiovisual localization · © 2026</span></div></footer>
 <script>
 (()=>{'use strict';const $=id=>document.getElementById(id);const fmt=t=>{const m=Math.floor(t/60),s=(t%60).toFixed(3).padStart(6,'0');return `00:${String(m).padStart(2,'0')}:${s}`};
 // Mobile nav
@@ -308,6 +231,9 @@ $('menuToggle').addEventListener('click',()=>{const n=$('mainNav'),open=n.classL
 // Case 01 · FAS-inspired live spotting editor, driven by the real video and WebVTT track
 const wsPlayer = $('ws-player');
 const wsTrack = $('ws-track');
+const WS_EMBEDDED_VTT = "WEBVTT\n\n00:00:00.042 --> 00:00:02.377\n[woman on radio] <i>Traffic is at 50 miles</i>\n\n00:00:02.460 --> 00:00:05.171\n<i>according to the São Paulo\ntraffic company,</i>\n\n00:00:05.255 --> 00:00:09.967\n<i>But our monitoring shows that we have\n300 miles of blocked ways.</i>\n\n00:00:10.051 --> 00:00:12.387\n[radio jingle plays]\n\n00:00:12.470 --> 00:00:14.473\n[woman on radio] <i>If you're in the west,</i>\n\n00:00:14.556 --> 00:00:16.140\n<i>do not go to Marginal Pinheiros</i>\n\n00:00:16.237 --> 00:00:20.878\n<i>because there is a demonstration\nblocking all lanes, so be careful with…</i>\n\n00:00:20.979 --> 00:00:24.023\n[man 1] <i>It comes down\nto individual character.</i>\n\n00:00:24.107 --> 00:00:25.233\n<i>It's about free will.</i>\n\n00:00:25.317 --> 00:00:29.734\n<i>The thing is: if you think you're going\nto get caught, you don't commit a crime.</i>\n\n00:00:29.830 --> 00:00:33.074\n<i>When you go to a strict country,\nthat has a strict law system,</i>\n\n00:00:33.158 --> 00:00:35.807\n<i>a Muslim or totalitarian country,</i>\n\n00:00:35.891 --> 00:00:37.356\n<i>where thieves lose a hand,</i>\n\n00:00:37.440 --> 00:00:40.274\n-[man 1] <i>Crime drops.</i>\n-[man 2] <i>No one wants that.</i>\n\n00:00:40.358 --> 00:00:42.209\n-[man 1] <i>Not that.</i>\n-[man 2] <i>It is.</i>\n\n00:00:42.300 --> 00:00:45.328\n-[man 1] <i>Homicide clearance is 5%.</i>\n-[man 2] <i>No, wait.</i>\n\n00:00:45.420 --> 00:00:47.881\n[man 1] <i>He must kill 20 people\nto go to jail.</i>\n\n00:00:47.989 --> 00:00:50.902\n<i>♪ When all the world's asleep ♪</i>\n\n00:00:52.177 --> 00:00:55.347\n<i>♪ The questions run too deep ♪</i>\n\n00:00:56.097 --> 00:01:01.334\n<i>♪ For such a simple man ♪</i>\n\n00:01:01.895 --> 00:01:07.327\n<i>♪ Won't you please\nplease tell me what we've learned ♪</i>\n\n00:01:08.150 --> 00:01:11.172\n<i>♪ I know it sounds absurd ♪</i>\n\n00:01:11.267 --> 00:01:12.333\n[electronic beep]\n\n00:01:13.240 --> 00:01:15.033\nCall Son.\n\n00:01:15.116 --> 00:01:15.848\n[beep]\n\n00:01:15.915 --> 00:01:17.404\n[female voice] <i>Calling son.</i>\n\n00:01:17.488 --> 00:01:19.103\n[ringback tone]\n\n00:01:21.605 --> 00:01:23.232\n[ringback tone]\n\n00:01:25.729 --> 00:01:27.474\n[ringback tone]\n\n00:01:29.932 --> 00:01:31.594\n[ringback tone]\n\n00:01:33.982 --> 00:01:35.702\n[ringback tone]\n\n00:01:38.125 --> 00:01:39.140\n[disconnect tone]\n\n00:01:39.224 --> 00:01:44.378\n[\"The Logical Song\" by Supertramp playing]\n";
+const wsVttBlobUrl = URL.createObjectURL(new Blob([WS_EMBEDDED_VTT], { type: 'text/vtt' }));
+wsTrack.src = wsVttBlobUrl;
 const wsTimeline = $('ws-timeline');
 const wsWaveform = $('ws-waveform');
 const wsCues = $('ws-cues');
@@ -333,21 +259,17 @@ let wsCaptionOn = true;
 let wsDrag = null;
 let wsIsReady = false;
 let wsPlayheadRaf = null;
+let wsCuePlaybackEnd = null;
 
 const wsProfiles = {
-  general: { rate: 17, cpl: 37, lines: 2, minDuration: 1, gap: 0.08,
-    note: 'General reference values for demonstration. Adjust them to the client brief.' },
-  conservative: { rate: 15, cpl: 32, lines: 2, minDuration: 1.2, gap: 0.12,
-    note: 'A deliberately conservative review profile. This is an editable example, not a universal standard.' },
-  netflix: { rate: 20, cpl: 42, lines: 2, minDuration: 1, gap: 0.08,
-    note: 'English adult reference for CPS/CPL exploration. Always check the current client guide and the applicable delivery requirements.' },
-  sdh: { rate: 22, cpl: 42, lines: 3, minDuration: 0.833, gap: 0.08,
-    note: 'A flexible three-line SDH review profile for comparison only. The client specification takes precedence.' }
+  netflix: { rate: 20, cpl: 42, lines: 2,
+    note: 'Netflix English adult reference: up to 20 CPS, 42 CPL and two lines. The project-specific guide always takes precedence.' },
+  sdh: { rate: 22, cpl: 42, lines: 3,
+    note: 'Flexible SDH review reference: up to 22 CPS, 42 CPL and three lines. Confirm the applicable client specification.' }
 };
 
 const wsEl = {
-  profile: $('ws-profile'), rate: $('ws-rate'), cpl: $('ws-cpl'), lines: $('ws-lines'),
-  minDuration: $('ws-min-duration'), gap: $('ws-gap'),
+  profile: $('ws-profile'), rate: $('ws-rate'), lines: $('ws-lines'),
   in: $('ws-tc-in'), out: $('ws-tc-out'),
   durationRange: $('ws-dur-range'), durationNumber: $('ws-dur-num'),
   cueIndex: $('ws-cue-index'), selectedTime: $('ws-selected-time'),
@@ -356,7 +278,6 @@ const wsEl = {
   mCpl: $('ws-m-cpl'), mCplVal: $('ws-m-cpl-val'), mCplState: $('ws-m-cpl-state'),
   mLines: $('ws-m-lines'), mLinesVal: $('ws-m-lines-val'), mLinesState: $('ws-m-lines-state'),
   mDuration: $('ws-m-duration'), mDurationVal: $('ws-m-duration-val'), mDurationState: $('ws-m-duration-state'),
-  mGap: $('ws-m-gap'), mGapVal: $('ws-m-gap-val'), mGapState: $('ws-m-gap-state'),
   summary: $('ws-summary'), statusRight: $('ws-status-right')
 };
 
@@ -402,18 +323,60 @@ function wsParseVtt(source) {
   }
   return parsed;
 }
+function wsApplyPortfolioRefinements(cues) {
+  const byStart = seconds => cues.find(cue => Math.abs(cue.start - seconds) < 0.025);
+  const replace = (seconds, raw) => {
+    const cue = byStart(seconds);
+    if (!cue) return;
+    cue.raw = raw;
+    cue.text = wsPlain(raw);
+  };
+
+  // Shorten the overlapping turns while preserving their meaning and speaker attribution.
+  replace(33.158, '<i>a Muslim or totalitarian country,</i>');
+  replace(35.891, '<i>where thieves lose a hand,</i>');
+  replace(12.470, "[woman on radio] <i>If you're in the west,</i>");
+  replace(37.440, '-[man 1] <i>Crime drops.</i>\n-[man 2] <i>No one wants that.</i>');
+  replace(40.358, '-[man 1] <i>Not that.</i>\n-[man 2] <i>It is.</i>');
+  // The Portuguese source refers to the homicide clearance rate, not manslaughter.
+  replace(42.300, '-[man 1] <i>Homicide clearance is 5%.</i>\n-[man 2] <i>No, wait.</i>');
+  replace(45.420, '[man 1] <i>He must kill 20 people\nto go to jail.</i>');
+
+  // Separate the confirmation beep from the assistant's spoken response.
+  const responseCue = byStart(75.116);
+  if (responseCue) {
+    responseCue.end = 75.848;
+    responseCue.raw = '[beep]';
+    responseCue.text = '[beep]';
+  }
+  if (responseCue && !byStart(75.915)) {
+    cues.push({
+      id: 'cue-assistant-response', start: 75.915, end: 77.404,
+      raw: '[female voice] <i>Calling son.</i>',
+      text: '[female voice] Calling son.'
+    });
+  }
+
+  // The following five events are the ringback tone heard while the call is being placed.
+  for (const cue of cues) {
+    if (/^\[phone rings\]$/i.test(cue.text.trim())) {
+      cue.raw = '[ringback tone]';
+      cue.text = '[ringback tone]';
+    }
+  }
+  return cues.sort((a, b) => a.start - b.start);
+}
+
 function wsSelectedCue() {
   return wsCuesData.find(cue => cue.id === wsSelectedId) || null;
 }
 function wsSetMetric(node, state) { node.dataset.state = state; }
 function wsSettings() {
   return {
-    rate: Number(wsEl.rate.value), cpl: Number(wsEl.cpl.value),
-    lines: Number(wsEl.lines.value), minDuration: Number(wsEl.minDuration.value),
-    gap: Number(wsEl.gap.value)
+    rate: Number(wsEl.rate.value), cpl: 42,
+    lines: Number(wsEl.lines.value)
   };
 }
-
 function wsBuildWaveform() {
   const width = 1200, height = 100, samples = 360;
   const points = [];
@@ -586,74 +549,57 @@ function wsComputeMetrics() {
   const lengths = wsLineLengths(cue.text);
   const cpl = Math.max(0, ...lengths);
   const lineCount = Math.max(1, lengths.length);
-  const sorted = [...wsCuesData].sort((a,b) => a.start - b.start);
-  const index = sorted.findIndex(item => item.id === cue.id);
-  const next = index >= 0 ? sorted[index+1] : null;
-  const gap = next ? next.start - cue.end : null;
   const cpsOK = cps <= limits.rate;
   const cplOK = cpl <= limits.cpl;
   const linesOK = lineCount <= limits.lines;
-  const durationOK = duration >= limits.minDuration;
-  const gapOK = gap === null || gap >= limits.gap;
 
   wsEl.mCpsVal.textContent = cps.toFixed(1);
   wsEl.mCplVal.textContent = String(cpl);
   wsEl.mLinesVal.textContent = String(lineCount);
   wsEl.mDurationVal.textContent = `${duration.toFixed(2)}s`;
-  wsEl.mGapVal.textContent = gap === null ? '—' : `${Math.round(gap*1000)}ms`;
 
   wsSetMetric(wsEl.mCps, cpsOK ? 'ok' : 'bad');
   wsSetMetric(wsEl.mCpl, cplOK ? 'ok' : 'bad');
   wsSetMetric(wsEl.mLines, linesOK ? 'ok' : 'bad');
-  wsSetMetric(wsEl.mDuration, durationOK ? 'ok' : 'bad');
-  wsSetMetric(wsEl.mGap, gapOK ? 'ok' : 'bad');
+  wsEl.mDurationState.textContent = 'Selected cue timing';
   wsEl.mCpsState.textContent = cpsOK ? `within ${limits.rate} CPS` : `over ${limits.rate} CPS`;
   wsEl.mCplState.textContent = cplOK ? `within ${limits.cpl} CPL` : `over ${limits.cpl} CPL`;
   wsEl.mLinesState.textContent = linesOK ? `within ${limits.lines} lines` : `over ${limits.lines} lines`;
-  wsEl.mDurationState.textContent = durationOK ? `≥ ${limits.minDuration.toFixed(2)} s` : `under ${limits.minDuration.toFixed(2)} s`;
-  wsEl.mGapState.textContent = gap === null ? 'last cue' : (gapOK ? 'within limit' : 'gap too short');
 
   const issues = [];
   if (!cpsOK) issues.push('reading speed exceeds the selected limit');
   if (!cplOK) issues.push('line length exceeds the selected limit');
   if (!linesOK) issues.push('too many lines');
-  if (!durationOK) issues.push('cue is shorter than the selected minimum');
-  if (!gapOK) issues.push('gap to the next cue is too short');
+  const index = wsCuesData.findIndex(item => item.id === cue.id);
   wsEl.summary.textContent = issues.length
-    ? `Cue ${index+1}: ${issues.join(' · ')}.`
-    : `Cue ${index+1} is within the selected technical limits.`;
+    ? `Cue ${index + 1}: ${issues.join(' · ')}.`
+    : `Cue ${index + 1} is within the selected CPS, CPL and line limits.`;
   wsEl.summary.dataset.state = issues.length ? 'bad' : 'ok';
 }
 function wsUpdateViolations() {
   const limits = wsSettings();
-  const sorted = [...wsCuesData].sort((a,b) => a.start - b.start);
-  sorted.forEach((cue, index) => {
+  for (const cue of wsCuesData) {
     const duration = Math.max(0.001, cue.end - cue.start);
     const lengths = wsLineLengths(cue.text);
     const cpl = Math.max(0, ...lengths);
     const lines = Math.max(1, lengths.length);
     const cps = wsVisibleChars(cue.text) / duration;
-    const next = sorted[index+1];
-    const gapBad = Boolean(next && next.start - cue.end < limits.gap);
     const node = wsCues.querySelector(`[data-id="${cue.id}"]`);
-    if (node) node.classList.toggle('violation', cps > limits.rate || cpl > limits.cpl || lines > limits.lines || duration < limits.minDuration || gapBad);
-  });
+    if (node) node.classList.toggle('violation', cps > limits.rate || cpl > limits.cpl || lines > limits.lines);
+  }
 }
 function wsApplyProfile(profile) {
   const p = wsProfiles[profile];
   if (!p) return;
   wsEl.rate.value = String(p.rate);
-  wsEl.cpl.value = String(p.cpl);
   wsEl.lines.value = String(p.lines);
-  wsEl.minDuration.value = String(p.minDuration);
-  wsEl.gap.value = String(p.gap);
   wsSpecNote.textContent = p.note;
   wsUpdateViolations();
   wsComputeMetrics();
 }
 function wsMarkCustom() {
   if (wsEl.profile.value !== 'custom') wsEl.profile.value = 'custom';
-  wsSpecNote.textContent = 'Custom combination. These values are for comparison only; the actual client brief always takes precedence.';
+  wsSpecNote.textContent = 'Custom comparison within the available reference ranges. The actual client brief takes precedence.';
   wsUpdateViolations();
   wsComputeMetrics();
 }
@@ -697,9 +643,11 @@ function wsEndDrag() {
   wsDrag = null;
   const cue = wsCuesData.find(item => item.id === drag.id);
   if (cue) {
-    wsPlayer.pause();
-    wsPlayer.currentTime = cue.start;
-    wsSyncAt(cue.start, false);
+    if (Number.isFinite(wsPlayer.duration)) {
+      wsPlayer.pause();
+      wsPlayer.currentTime = cue.start;
+      wsSyncAt(cue.start, false);
+    }
     wsSyncEditor();
     wsComputeMetrics();
   }
@@ -755,8 +703,11 @@ wsDurationRange.addEventListener('input', () => wsSetDuration(wsDurationRange.va
 wsDurationNumber.addEventListener('change', () => wsSetDuration(wsDurationNumber.value));
 wsTimeIn.addEventListener('change', () => wsApplyTimecode('in'));
 wsTimeOut.addEventListener('change', () => wsApplyTimecode('out'));
-wsEl.profile.addEventListener('change', () => wsApplyProfile(wsEl.profile.value));
-[wsEl.rate, wsEl.cpl, wsEl.lines, wsEl.minDuration, wsEl.gap].forEach(control => control.addEventListener('change', wsMarkCustom));
+wsEl.profile.addEventListener('change', () => {
+  if (wsEl.profile.value === 'custom') wsMarkCustom();
+  else wsApplyProfile(wsEl.profile.value);
+});
+[wsEl.rate, wsEl.lines].forEach(control => control.addEventListener('change', wsMarkCustom));
 wsCaptionToggle.addEventListener('click', () => {
   wsCaptionOn = !wsCaptionOn;
   wsCaptionToggle.textContent = wsCaptionOn ? 'CC overlay on' : 'CC overlay off';
@@ -768,18 +719,26 @@ wsCaptionToggle.addEventListener('click', () => {
 });
 wsWatch.addEventListener('click', async () => {
   if (!wsPlayer.paused) {
+    wsCuePlaybackEnd = null;
     wsPlayer.pause();
     wsWatch.textContent = '▶ Play selected cue';
     wsWatch.setAttribute('aria-pressed', 'false');
     return;
   }
   const cue = wsSelectedCue() || wsCuesData[0];
-  if (cue) wsPlayer.currentTime = cue.start;
+  if (!cue) return;
+  if (!Number.isFinite(wsPlayer.duration) || wsPlayer.readyState < 1) {
+    wsStatusLeft.textContent = 'Video is still loading · try again when playback is ready';
+    return;
+  }
+  wsCuePlaybackEnd = cue.end;
+  wsPlayer.currentTime = cue.start;
   try {
     await wsPlayer.play();
-    wsWatch.textContent = 'Ⅱ Pause playback';
+    wsWatch.textContent = 'Ⅱ Pause cue';
     wsWatch.setAttribute('aria-pressed', 'true');
   } catch (error) {
+    wsCuePlaybackEnd = null;
     wsStatusLeft.textContent = 'Playback could not start · use the video controls';
   }
 });
@@ -804,23 +763,37 @@ wsPlayer.addEventListener('play', () => {
   wsStartPlayheadAnimation();
 });
 wsPlayer.addEventListener('pause', () => {
+  if (wsCuePlaybackEnd !== null && wsPlayer.currentTime < wsCuePlaybackEnd - 0.05) wsCuePlaybackEnd = null;
   wsWatch.textContent = '▶ Play selected cue';
   wsWatch.setAttribute('aria-pressed', 'false');
   wsStopPlayheadAnimation();
 });
+wsPlayer.addEventListener('loadeddata', () => { wsStatusLeft.textContent = 'Video loaded and ready for playback'; });
 wsPlayer.addEventListener('loadedmetadata', () => {
   if (Number.isFinite(wsPlayer.duration) && wsPlayer.duration > 0) wsDuration = wsPlayer.duration;
   wsEl.totalDuration.textContent = wsFmt(wsDuration);
   wsBuildWaveform();
   wsRenderCues();
   wsMovePlayhead(wsPlayer.currentTime || 0);
+  wsStatusLeft.textContent = `Video ready · ${wsFmt(wsDuration)} · ${wsCuesData.length} captions`;
+  wsTimelineHint.textContent = 'Video loaded · select or drag a cue to inspect it';
 });
-wsPlayer.addEventListener('timeupdate', () => { if (wsPlayer.paused) wsSyncAt(wsPlayer.currentTime || 0, false); });
+wsPlayer.addEventListener('timeupdate', () => {
+  if (wsCuePlaybackEnd !== null && wsPlayer.currentTime >= wsCuePlaybackEnd) {
+    const end = wsCuePlaybackEnd;
+    wsCuePlaybackEnd = null;
+    wsPlayer.pause();
+    wsPlayer.currentTime = end;
+    wsSyncAt(end, false);
+    return;
+  }
+  if (wsPlayer.paused) wsSyncAt(wsPlayer.currentTime || 0, false);
+});
 wsPlayer.addEventListener('seeked', () => wsSyncAt(wsPlayer.currentTime || 0, false));
 wsPlayer.addEventListener('ended', () => wsSyncAt(wsPlayer.duration || wsDuration, false));
 wsPlayer.addEventListener('error', () => {
-  wsStatusLeft.textContent = 'Video unavailable · check assets/blindado-excerpt.mp4';
-  wsTimelineHint.textContent = 'Video file could not be loaded';
+  wsStatusLeft.textContent = 'Video unavailable · the MP4 source could not be decoded';
+  wsTimelineHint.textContent = 'Check that the repository asset is a valid MP4 file, not a placeholder';
 });
 wsTimeline.addEventListener('click', event => {
   if (event.target.closest('.ws-cue')) return;
@@ -837,10 +810,7 @@ wsTimeline.addEventListener('keydown', event => {
 
 async function wsLoadCues() {
   try {
-    const response = await fetch('captions/blindado-en.vtt', { cache: 'no-cache' });
-    if (!response.ok) throw new Error(`VTT request failed (${response.status})`);
-    const raw = await response.text();
-    wsCuesData = wsParseVtt(raw);
+    wsCuesData = wsApplyPortfolioRefinements(wsParseVtt(WS_EMBEDDED_VTT));
     wsOriginalCues = wsCuesData.map(cue => ({...cue}));
     wsSelectedId = wsCuesData[0]?.id || null;
     const textTrack = wsPlayer.textTracks && wsPlayer.textTracks[0];
@@ -849,7 +819,7 @@ async function wsLoadCues() {
     wsSyncEditor();
     wsComputeMetrics();
     wsSyncAt(wsPlayer.currentTime || 0, false);
-    wsStatusLeft.textContent = `Ready · ${wsCuesData.length} cues loaded from WebVTT`;
+    wsStatusLeft.textContent = `Ready · ${wsCuesData.length} cues loaded for the workstation`;
     wsTimelineHint.textContent = `${wsCuesData.length} cues · play to follow the active caption`;
     wsIsReady = true;
   } catch (error) {
@@ -860,10 +830,10 @@ async function wsLoadCues() {
     if (textTrack) {
       textTrack.mode = 'hidden';
       const fallback = textTrack.cues ? Array.from(textTrack.cues) : [];
-      wsCuesData = fallback.map((cue, index) => ({
+      wsCuesData = wsApplyPortfolioRefinements(fallback.map((cue, index) => ({
         id: `cue-${index+1}`, start: cue.startTime, end: cue.endTime,
         raw: cue.text, text: wsPlain(cue.text)
-      }));
+      })));
       wsOriginalCues = wsCuesData.map(cue => ({...cue}));
       wsSelectedId = wsCuesData[0]?.id || null;
       wsRenderCues(); wsSyncEditor(); wsComputeMetrics();
@@ -875,393 +845,17 @@ wsTrack.addEventListener('load', () => {
   if (textTrack) textTrack.mode = 'hidden';
 });
 wsLoadCues();
-// Blindado: repository-hosted MP4 + native WebVTT captions
-const blindadoVideo = $('blindadoVideo');
-const blindadoTrack = $('blindadoTrack');
-const blindadoStatus = $('blindadoStatus');
-const ccToggle = $('ccToggle');
-const videoTime = $('videoTime');
-let captionsEnabled = true;
-
-function setBlindadoCaptions(enabled) {
-  captionsEnabled = enabled;
-  const textTrack = blindadoVideo.textTracks && blindadoVideo.textTracks[0];
-  if (textTrack) textTrack.mode = enabled ? 'showing' : 'disabled';
-  ccToggle.textContent = enabled ? 'Captions on' : 'Captions off';
-  ccToggle.setAttribute('aria-pressed', String(enabled));
-}
-blindadoTrack.addEventListener('load', () => {
-  setBlindadoCaptions(captionsEnabled);
-  blindadoStatus.textContent = 'Video and captions ready';
-});
-blindadoVideo.addEventListener('loadedmetadata', () => {
-  setBlindadoCaptions(captionsEnabled);
-  blindadoStatus.textContent = 'Video loaded';
-});
-blindadoVideo.addEventListener('loadeddata', () => {
-  blindadoStatus.textContent = 'Ready to play';
-});
-blindadoVideo.addEventListener('timeupdate', () => {
-  const t = blindadoVideo.currentTime || 0;
-  const m = Math.floor(t / 60);
-  const s = Math.floor(t % 60);
-  videoTime.textContent = String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
-});
-blindadoVideo.addEventListener('error', () => {
-  blindadoStatus.textContent = 'Video unavailable';
-});
-blindadoTrack.addEventListener('error', () => {
-  blindadoStatus.textContent = 'Caption track unavailable';
-});
-ccToggle.addEventListener('click', () => setBlindadoCaptions(!captionsEnabled));
-
-// PE workflow: review -> post-edit -> QC -> delivery
-const issues = [
-  {
-    from: '[WIND BLOWING]',
-    to: '[WIND HOWLING]',
-    type: 'Sound description',
-    severity: 'Editorial',
-    why: 'Choose a description that reflects the audible quality; do not infer intensity without listening.'
-  },
-  {
-    from: 'I was waiting on you.',
-    to: 'I was waiting for you.',
-    type: 'Grammar / usage',
-    severity: 'Minor',
-    why: 'Corrects the preposition for the intended meaning in this context.'
-  },
-  {
-    from: '[DOOR CLOSE]',
-    to: '[DOOR SLAMS]',
-    type: 'Sound event',
-    severity: 'Contextual',
-    why: 'Use only if the audio supports a forceful slam rather than a neutral closing.'
-  },
-  {
-    from: 'We should of left earlier.',
-    to: 'We should have left earlier.',
-    type: 'Speech recognition',
-    severity: 'Major',
-    why: 'Corrects a common ASR homophone substitution.'
-  }
-];
-
-let peStep = 'review';
-const logged = new Set();
-const qcDone = { timing: false, cps: false, spelling: false };
-let qcTab = 'timing';
-let cpsChoice = -1;
-
-const peOrder = ['review', 'post', 'qc', 'delivery'];
-const peLabels = {
-  review: 'Step 1 of 4 · Review machine-generated subtitles',
-  post: 'Step 2 of 4 · Human post-editing',
-  qc: 'Step 3 of 4 · Technical and linguistic QC',
-  delivery: 'Step 4 of 4 · Delivery'
-};
-
-function renderIssues() {
-  let list = $('issueList');
-
-  // QC and Delivery replace the right panel's contents. Re-create the
-  // correction list when the user navigates back to Review or Post-edit.
-  if (!list) {
-    $('peRightPanel').innerHTML = '<div class="issue-list" id="issueList"></div>';
-    list = $('issueList');
-  }
-
-  list.innerHTML = '';
-
-  issues.forEach((item, index) => {
-    const row = document.createElement('div');
-    row.className = 'issue' + (logged.has(index) ? ' logged' : '');
-
-    const details = document.createElement('div');
-    details.innerHTML = `
-      <span class="issue-tags">${item.type} · ${item.severity}</span><br>
-      <strong>
-        <span style="color:#a94442;text-decoration:line-through">${item.from}</span>
-        → <span style="color:#26745b">${item.to}</span>
-      </strong>
-      <p>${item.why}</p>`;
-
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.textContent = logged.has(index) ? '✓ Logged' : 'Log correction';
-    button.disabled = logged.has(index) || peStep !== 'post';
-    button.addEventListener('click', () => {
-      logged.add(index);
-      renderPe();
-    });
-
-    row.append(details, button);
-    list.append(row);
-  });
-}
-
-function renderQc() {
-  const panel = $('peRightPanel');
-  panel.innerHTML = `
-    <div class="qc-tabs">
-      <button type="button" data-q="timing" class="${qcTab === 'timing' ? 'active' : ''} ${qcDone.timing ? 'resolved' : ''}">Timing ${qcDone.timing ? '✓' : ''}</button>
-      <button type="button" data-q="cps" class="${qcTab === 'cps' ? 'active' : ''} ${qcDone.cps ? 'resolved' : ''}">CPS ${qcDone.cps ? '✓' : ''}</button>
-      <button type="button" data-q="spelling" class="${qcTab === 'spelling' ? 'active' : ''} ${qcDone.spelling ? 'resolved' : ''}">Spelling ${qcDone.spelling ? '✓' : ''}</button>
-    </div>
-    <div class="qc-content" id="qcContent"></div>`;
-
-  panel.querySelectorAll('[data-q]').forEach(button => {
-    button.addEventListener('click', () => {
-      qcTab = button.dataset.q;
-      renderPe();
-    });
-  });
-
-  const content = $('qcContent');
-
-  if (qcTab === 'timing') {
-    content.innerHTML = `
-      <strong>Issue: cue crosses a shot change</strong>
-      <p>Move the cue endpoint to finish before the shot-change marker. This mock timing check is illustrative.</p>
-      <div class="timeline" id="qcTrack">
-        <div class="wave"></div>
-        <span class="shotline" style="left:52%"></span>
-        <div class="cue-bar" id="qcCue" style="left:35%;width:31%">DRAG LEFT</div>
-      </div>
-      <button class="tool-btn" id="resolveTiming" type="button" style="margin-top:10px" ${qcDone.timing ? 'disabled' : ''}>Confirm timing adjustment</button>
-      ${qcDone.timing ? '<p style="color:var(--green);font-weight:800">✓ Timing check resolved.</p>' : ''}`;
-
-    const cue = $('qcCue');
-    const track = $('qcTrack');
-    let dragging = false;
-
-    cue.addEventListener('pointerdown', event => {
-      dragging = true;
-      cue.setPointerCapture(event.pointerId);
-    });
-    cue.addEventListener('pointermove', event => {
-      if (!dragging) return;
-      const rect = track.getBoundingClientRect();
-      const left = Math.max(0, Math.min(21, (event.clientX - rect.left) / rect.width * 100));
-      cue.style.left = left + '%';
-      cue.style.width = '31%';
-    });
-    cue.addEventListener('pointerup', () => { dragging = false; });
-    cue.addEventListener('pointercancel', () => { dragging = false; });
-
-    $('resolveTiming').addEventListener('click', () => {
-      qcDone.timing = true;
-      renderPe();
-    });
-
-  } else if (qcTab === 'cps') {
-    content.innerHTML = `
-      <strong>Issue: reading speed exceeds the mock project limit</strong>
-      <p>Choose a concise alternative. The CPS figures are illustrative and depend on the actual cue duration.</p>
-      <button type="button" class="option ${cpsChoice === 0 ? 'selected' : ''} good" data-opt="0">
-        <span>“Achei que você fosse sair.”</span><strong class="score">15 CPS</strong>
-      </button>
-      <button type="button" class="option ${cpsChoice === 1 ? 'selected' : ''} bad" data-opt="1">
-        <span>“Pensei que você sairia.”</span><strong class="score">19 CPS</strong>
-      </button>
-      <div class="qc-actions">
-        <button class="tool-btn" id="confirmCps" type="button" ${cpsChoice !== 0 || qcDone.cps ? 'disabled' : ''}>Apply selected option</button>
-      </div>
-      ${qcDone.cps ? '<p style="color:var(--green);font-weight:800">✓ CPS check resolved.</p>' : ''}`;
-
-    content.querySelectorAll('[data-opt]').forEach(button => {
-      button.addEventListener('click', () => {
-        cpsChoice = Number(button.dataset.opt);
-        renderPe();
-      });
-    });
-
-    $('confirmCps').addEventListener('click', () => {
-      if (cpsChoice === 0 && !qcDone.cps) {
-        qcDone.cps = true;
-        renderPe();
-      }
-    });
-
-  } else {
-    content.innerHTML = `
-      <strong>Issue: speech-recognition spelling error</strong>
-      <p>ASR output: <span class="problem">We should of left earlier.</span></p>
-      <p>Correction: <span class="fixed">We should have left earlier.</span></p>
-      <button class="tool-btn" id="resolveSpelling" type="button" ${qcDone.spelling ? 'disabled' : ''}>Confirm correction</button>
-      ${qcDone.spelling ? '<p style="color:var(--green);font-weight:800">✓ Spelling check resolved.</p>' : ''}`;
-
-    $('resolveSpelling').addEventListener('click', () => {
-      qcDone.spelling = true;
-      renderPe();
-    });
-  }
-}
-
-function renderPe() {
-  const currentIndex = peOrder.indexOf(peStep);
-
-  document.querySelectorAll('#peStepper button').forEach(button => {
-    const index = peOrder.indexOf(button.dataset.step);
-    button.classList.toggle('active', button.dataset.step === peStep);
-    button.classList.toggle('done', index >= 0 && index < currentIndex);
-    button.disabled = index > currentIndex;
-  });
-
-  $('peStepTitle').textContent = peLabels[peStep];
-  $('nextPe').style.display = peStep === 'delivery' ? 'none' : 'inline-block';
-  $('runQc').style.display = peStep === 'qc' ? 'inline-block' : 'none';
-  $('peCompletion').style.display = peStep === 'delivery' ? 'block' : 'none';
-
-  const allCorrectionsLogged = logged.size === issues.length;
-  const allQCResolved = Object.values(qcDone).every(Boolean);
-
-  $('nextPe').disabled =
-    peStep === 'review' ? false :
-    peStep === 'post' ? !allCorrectionsLogged :
-    peStep === 'qc' ? !allQCResolved : true;
-
-  if (peStep === 'review' || peStep === 'post') {
-    $('leftReviewTitle').textContent = peStep === 'review'
-      ? 'Machine-generated output'
-      : 'Human-reviewed version';
-
-    $('rawReview').innerHTML = peStep === 'review'
-      ? '<span class="problem">[WIND BLOWING]</span><br><span class="problem">I was waiting on you.</span><br><span class="problem">[DOOR CLOSE]</span><br><span class="problem">We should of left earlier.</span>'
-      : '[WIND HOWLING]<br>I was waiting for you.<br>[DOOR SLAMS]<br>We should have left earlier.';
-
-    $('rightReviewTitle').textContent = peStep === 'review'
-      ? 'Correction preview'
-      : 'Edit log';
-
-    $('peRightPanel').style.display = 'block';
-    renderIssues();
-
-  } else if (peStep === 'qc') {
-    $('rawReview').textContent = 'I thought you were leaving.';
-    $('leftReviewTitle').textContent = 'QC preview';
-    $('rightReviewTitle').textContent = 'Checks & resolutions';
-    $('peRightPanel').style.display = 'block';
-    renderQc();
-
-  } else if (peStep === 'delivery') {
-    $('rawReview').textContent = 'All corrected cues and checks are ready for delivery.';
-    $('leftReviewTitle').textContent = 'Delivery preview';
-    $('rightReviewTitle').textContent = 'Final status';
-
-    const resolvedCount = Object.values(qcDone).filter(Boolean).length;
-    $('peRightPanel').style.display = 'block';
-    $('peRightPanel').innerHTML = `
-      <div class="completion">
-        <strong>${logged.size} corrections logged · ${resolvedCount} of ${Object.keys(qcDone).length} QC checks resolved</strong>
-        <p>Fictional example report. No benchmark score is claimed.</p>
-      </div>`;
-  }
-}
-
-$('peStepper').querySelectorAll('button').forEach(button => {
-  button.addEventListener('click', () => {
-    const targetIndex = peOrder.indexOf(button.dataset.step);
-    const currentIndex = peOrder.indexOf(peStep);
-    if (targetIndex >= 0 && targetIndex <= currentIndex) {
-      peStep = button.dataset.step;
-      renderPe();
-    }
-  });
-});
-
-$('nextPe').addEventListener('click', () => {
-  if (peStep === 'review') {
-    peStep = 'post';
-  } else if (peStep === 'post' && logged.size === issues.length) {
-    peStep = 'qc';
-  } else if (peStep === 'qc' && Object.values(qcDone).every(Boolean)) {
-    peStep = 'delivery';
-  }
-  renderPe();
-});
-
-$('runQc').addEventListener('click', () => {
-  qcTab = 'timing';
-  renderPe();
-});
-
-$('copyReport').addEventListener('click', () => {
-  const reportLines = [
-    'ILLUSTRATIVE SDH POST-EDITING REPORT',
-    '',
-    'CORRECTIONS',
-    ...issues.flatMap((item, index) => [
-      `${index + 1}. ${item.type} (${item.severity}) — ${logged.has(index) ? 'Logged' : 'Pending'}`,
-      `   Original: ${item.from}`,
-      `   Revised: ${item.to}`,
-      `   Rationale: ${item.why}`
-    ]),
-    '',
-    'QC CHECKS',
-    ...Object.entries(qcDone).map(([name, resolved]) =>
-      `${name}: ${resolved ? 'Resolved' : 'Pending'}`
-    )
-  ];
-
-  const blob = new Blob([reportLines.join('\n')], {
-    type: 'text/plain;charset=utf-8'
-  });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = 'illustrative-sdh-post-editing-report.txt';
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
-});
-
-renderPe();
+wsApplyProfile('netflix');
+wsPlayer.load();
+window.addEventListener('beforeunload', () => URL.revokeObjectURL(wsVttBlobUrl), { once: true });
+// PE workflow adapted from FAS: review -> post-edit -> QC -> delivery
+const issues=[{from:'[WIND BLOWING]',to:'[wind howling]',type:'Sound description',severity:'Editorial',why:'Choose a description that reflects the audible quality; do not infer intensity without listening.'},{from:'I was waiting on you.',to:'I was waiting for you.',type:'Grammar / usage',severity:'Minor',why:'Corrects the preposition for the intended meaning in this context.'},{from:'[DOOR CLOSING]',to:'[door slams]',type:'Sound event',severity:'Contextual',why:'Use only if the audio supports a forceful slam rather than a neutral closing.'},{from:'We should of left earlier.',to:'We should have left earlier.',type:'Speech recognition',severity:'Major',why:'Corrects a common ASR homophone substitution.'}];let peStep='review',logged=new Set(),qcDone={timing:false,cps:false,spelling:false},qcTab='timing',cpsChoice=-1;const peLabels={review:'Step 1 of 4 · Review machine-generated subtitles',post:'Step 2 of 4 · Human post-editing',qc:'Step 3 of 4 · Technical and linguistic QC',delivery:'Step 4 of 4 · Delivery'};function renderIssues(){const list=$('issueList');if(!list)return;list.innerHTML='';issues.forEach((it,i)=>{const d=document.createElement('div');d.className='issue'+(logged.has(i)?' logged':'');const meta=document.createElement('div');meta.innerHTML=`<span class="issue-tags">${it.type} · ${it.severity}</span><br><strong><span style="color:#a94442;text-decoration:line-through">${it.from}</span> → <span style="color:#26745b">${it.to}</span></strong><p>${it.why}</p>`;const action=document.createElement('div');action.className='issue-action';const arrow=document.createElement('span');arrow.className='log-arrow';arrow.setAttribute('aria-hidden','true');arrow.textContent='➜';arrow.hidden=logged.has(i)||peStep!=='post';const b=document.createElement('button');b.textContent=logged.has(i)?'✓ Logged':'Log correction';b.disabled=logged.has(i)||peStep!=='post';b.onclick=()=>{logged.add(i);renderPe()};action.append(arrow,b);d.append(meta,action);list.append(d)})}function renderQc(){const box=$('peRightPanel');box.innerHTML=`<div class="qc-tabs"><button data-q="timing" class="${qcTab==='timing'?'active':''} ${qcDone.timing?'resolved':''}">Timing ${qcDone.timing?'✓':''}</button><button data-q="cps" class="${qcTab==='cps'?'active':''} ${qcDone.cps?'resolved':''}">CPS ${qcDone.cps?'✓':''}</button><button data-q="spelling" class="${qcTab==='spelling'?'active':''} ${qcDone.spelling?'resolved':''}">Spelling ${qcDone.spelling?'✓':''}</button></div><div class="qc-content" id="qcContent"></div>`;box.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{qcTab=b.dataset.q;renderPe()});const c=$('qcContent');if(qcTab==='timing'){c.innerHTML=`<strong>Issue: cue crosses a shot change</strong><p>Move the cue endpoint to finish before the shot-change marker. This mock timing check is illustrative.</p><div class="timeline" id="qcTrack"><div class="wave"></div><span class="shotline" style="left:52%"></span><div class="cue-bar" id="qcCue" style="left:35%;width:31%">DRAG LEFT</div></div><button class="tool-btn" id="resolveTiming" style="margin-top:10px" ${qcDone.timing?'disabled':''}>Confirm timing adjustment</button>${qcDone.timing?'<p style="color:var(--green);font-weight:800">✓ Timing check resolved.</p>':''}`;let q=$('qcCue'),drag=false;if(q){q.onpointerdown=e=>{drag=true;q.setPointerCapture(e.pointerId)};q.onpointermove=e=>{if(!drag)return;const r=$('qcTrack').getBoundingClientRect();const left=Math.max(0,Math.min(21,(e.clientX-r.left)/r.width*100));q.style.left=left+'%';q.style.width='31%'};q.onpointerup=()=>drag=false;q.onpointercancel=()=>drag=false}$('resolveTiming').onclick=()=>{qcDone.timing=true;renderPe()}}else if(qcTab==='cps'){c.innerHTML=`<strong>Issue: reading speed exceeds the mock project limit</strong><p>Choose a concise alternative. The CPS figures are illustrative and depend on the actual cue duration.</p><button class="option ${cpsChoice===0?'selected':''} good" data-opt="0"><span>“Pensei que você sairia.”</span><strong class="score">15 CPS</strong></button><button class="option ${cpsChoice===1?'selected':''} bad" data-opt="1"><span>“Achei que você fosse sair.”</span><strong class="score">19 CPS</strong></button><div class="qc-actions"><button class="tool-btn" id="confirmCps" ${cpsChoice!==0?'disabled':''}>Apply selected option</button></div>${qcDone.cps?'<p style="color:var(--green);font-weight:800">✓ CPS check resolved.</p>':''}`;c.querySelectorAll('[data-opt]').forEach(b=>b.onclick=()=>{cpsChoice=Number(b.dataset.opt);renderPe()});$('confirmCps').onclick=()=>{if(cpsChoice===0){qcDone.cps=true;renderPe()}}}else{c.innerHTML=`<strong>Issue: speech-recognition spelling error</strong><p>ASR output: <span class="problem">We should of left earlier.</span></p><p>Correction: <span class="fixed">We should have left earlier.</span></p><button class="tool-btn" id="resolveSpelling" ${qcDone.spelling?'disabled':''}>Confirm correction</button>${qcDone.spelling?'<p style="color:var(--green);font-weight:800">✓ Spelling check resolved.</p>':''}`;$('resolveSpelling').onclick=()=>{qcDone.spelling=true;renderPe()}}}function renderPe(){document.querySelectorAll('#peStepper button').forEach(b=>{b.classList.toggle('active',b.dataset.step===peStep);b.classList.toggle('done',({review:0,post:1,qc:2,delivery:3}[b.dataset.step])<({review:0,post:1,qc:2,delivery:3}[peStep]))});$('peStepTitle').textContent=peLabels[peStep];$('nextPe').style.display=peStep==='delivery'?'none':'inline-block';$('nextPe').disabled=peStep==='review'?false:peStep==='post'?logged.size!==issues.length:peStep==='qc'?Object.values(qcDone).some(v=>!v):false;$('runQc').style.display=peStep==='qc'?'inline-block':'none';$('peCompletion').style.display=peStep==='delivery'?'block':'none';if(peStep==='review'||peStep==='post'){ $('leftReviewTitle').textContent=peStep==='review'?'Machine-generated output':'Human-reviewed version';$('rawReview').innerHTML=peStep==='review'?'<span class="problem">[wind blowing]</span><br><span class="problem">I was waiting on you.</span><br><span class="problem">[door closing]</span><br><span class="problem">We should of left earlier.</span>':'[wind howling]<br>I was waiting for you.<br>[door slams]<br>We should have left earlier.';$('rightReviewTitle').textContent=peStep==='review'?'Correction preview':'Edit log';$('peRightPanel').innerHTML='<div class=\"issue-list\" id=\"issueList\"></div>';$('peRightPanel').style.display='block';renderIssues()}else if(peStep==='qc'){ $('rawReview').innerHTML='I thought you were leaving.';$('leftReviewTitle').textContent='QC preview';$('rightReviewTitle').textContent='Checks & resolutions';renderQc()}else{$('rawReview').innerHTML='All corrected cues and checks are ready for delivery.';$('leftReviewTitle').textContent='Delivery preview';$('rightReviewTitle').textContent='Final status';const resolvedCount=Object.values(qcDone).filter(Boolean).length;$('peRightPanel').innerHTML=`<div class="completion"><strong>${logged.size} corrections logged · ${resolvedCount} of ${Object.keys(qcDone).length} QC checks resolved</strong><p>Fictional example report. No benchmark score is claimed.</p></div>`}}$('peStepper').querySelectorAll('button').forEach(b=>b.onclick=()=>{const target=b.dataset.step,order=['review','post','qc','delivery'];if(order.indexOf(target)<=order.indexOf(peStep)||target==='review') {peStep=target;renderPe()}});$('nextPe').onclick=()=>{if(peStep==='review')peStep='post';else if(peStep==='post'&&logged.size===issues.length)peStep='qc';else if(peStep==='qc'&&Object.values(qcDone).every(Boolean))peStep='delivery';renderPe()};$('runQc').onclick=()=>{qcTab='timing';renderPe()};$('copyReport').onclick=()=>{const lines=['ILLUSTRATIVE SDH POST-EDITING REPORT','','CORRECTIONS',...issues.map((x,i)=>`${i+1}. ${x.type} (${x.severity})\n   Original: ${x.from}\n   Revised: ${x.to}\n   Rationale: ${x.why}`),'','CORRECTION STATUS',`${logged.size} of ${issues.length} corrections logged`,'','QC CHECKS',...Object.entries(qcDone).map(([name,done])=>`${name}: ${done?'Resolved':'Pending'}`)];const blob=new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='illustrative-sdh-post-editing-report.txt';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);$('copyReport').textContent='Report downloaded ✓'};renderPe();
 // Dialect choice
 const dialectTexts={preserve:'<strong>Selected: preserve marked voice.</strong><br>Appropriate when the colloquial form is audible, consistent with the character and permitted by the project style guide.',normalize:'<strong>Selected: normalize spelling.</strong><br>Appropriate when the form is not a meaningful character marker, the guide requires standard spelling, or the colloquial rendering would impair readability.'};document.querySelectorAll('[data-dialect]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-dialect]').forEach(x=>x.classList.toggle('active',x===b));$('dialectResult').innerHTML=dialectTexts[b.dataset.dialect]});
-// Annotation builder
-const annotationFields = [
-  { id: 'actor', label: 'Actor' },
-  { id: 'character', label: 'Character' },
-  { id: 'action', label: 'Action' },
-  { id: 'feeling', label: 'Feeling' },
-  { id: 'relevance', label: 'Narrative relevance' }
-];
-
-function annotation() {
-  $('annotationOutput').textContent = annotationFields
-    .map(({ id, label }) => `${label}: ${$(id).value}`)
-    .join('\n');
-}
-
-annotationFields.forEach(({ id }) => {
-  $(id).addEventListener('change', annotation);
-});
-annotation();
-
-$('copyAnnotation').addEventListener('click', async () => {
-  const text = $('annotationOutput').textContent;
-  const button = $('copyAnnotation');
-  try {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      await navigator.clipboard.writeText(text);
-      button.textContent = 'Copied ✓';
-    } else {
-      throw new Error('Clipboard API unavailable');
-    }
-  } catch (error) {
-    const textarea = document.createElement('textarea');
-    textarea.value = text;
-    textarea.style.position = 'fixed';
-    textarea.style.opacity = '0';
-    document.body.appendChild(textarea);
-    textarea.select();
-    const copied = document.execCommand('copy');
-    textarea.remove();
-    button.textContent = copied ? 'Copied ✓' : 'Copy unavailable';
-  }
-});
+// Structured metadata annotation builder
+const annIds=['annSpeaker','annActor','annLanguage','annTone','annSong','annOrientation','annSubject','annAction','annCaption','annPlot'];
+function annotation(){const speaker=$('annSpeaker').value,actor=$('annActor').value,language=$('annLanguage').value,tone=$('annTone').value,song=$('annSong').value.trim(),orientation=$('annOrientation').value;const metadata=[`S: ${speaker}`,`A: ${actor}`,`L: ${language}`];if(tone)metadata.push(`T: ${tone}`);if(song)metadata.push(`N: ${song}`);if(orientation)metadata.push(`O: ${orientation}`);const subject=$('annSubject').value,action=$('annAction').value,caption=$('annCaption').value.trim();const captionFields=[`sub: ${subject}`,`action: ${action}`,`cap: ${caption}`];if($('annPlot').checked)captionFields.push('P');$('annotationOutput').textContent=`{${metadata.join(' || ')}}\n[${captionFields.join(' || ')}]`;}
+annIds.forEach(id=>$(id).addEventListener('input',annotation));annIds.forEach(id=>$(id).addEventListener('change',annotation));annotation();$('copyAnnotation').onclick=async()=>{const value=$('annotationOutput').textContent;try{if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(value);$('copyAnnotation').textContent='Copied ✓';}else{throw new Error('Clipboard unavailable')}}catch(error){const area=document.createElement('textarea');area.value=value;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.select();const copied=document.execCommand('copy');area.remove();$('copyAnnotation').textContent=copied?'Copied ✓':'Select output to copy';}};
 })();
 </script>
 </body></html>
